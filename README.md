@@ -1,10 +1,8 @@
-# Multipolar_polarizabilities
+# Multipolar polarizabilities in materials: ab initio calculations with Wannier functions
 
-A workflow for calculating multipolar (dipole-dipole, dipole–quadrupole, quadrupole–quadrupole, dipole–octupole) polarizabilities
-from Maximally Localized Wannier Functions, and for evaluating the natural optical activity (rotatory power and ellipticity) of materials.
 ----------------------------------------------------------------------------------------------------------------------------------
 
-This code is provided for the paper: "Multipolar polarizabilities in materials: ab initio calculations with Wannier functions".
+This computational data is provided for the paper: "Multipolar polarizabilities in materials: ab initio calculations with Wannier functions".
 
          [link to be added upon publication]
 
@@ -21,8 +19,11 @@ Address: Advanced Materials and Devices Theory Group, Department of Physics, Uni
 ------------------------------------------------------------------------------------------------------------------------------------
 
 OVERVIEW:
+====================================================================================================================================
+This repository contains a package, input files and representative output files used for the calculations reported in the manuscript.
 
-This package contains four codes. Together with a preparatory DFT / Wannierization step, they form
+The package is used for calculating multipolar (dipole-dipole, dipole–quadrupole, quadrupole–quadrupole, dipole–octupole) polarizabilities
+from Maximally Localized Wannier Functions, and for evaluating the natural optical activity (rotatory power and ellipticity) of materials. This package contains four codes. Together with a preparatory DFT / Wannierization step, they form
 the following workflow:
 
   Stage 0 - Electronic structure and maximally localized Wannier functions  (Quantum ESPRESSO + Wannier90)
@@ -57,7 +58,7 @@ DEPENDENCIES:
 - Stages 2 and 3: python3 with Numpy, Scipy and Matplotlib.
 
 ------------------------------------------------------------------------------------------------------------------------------------
-STAGE 0 :  Electronic structure and maximally localized Wannier functions  (Quantum ESPRESSO + Wannier90)
+STAGE 0 :  Electronic structure and maximally localized Wannier functions  (Quantum ESPRESSO + Wannier90) 
 ====================================================================================================================================
 This preparatory stage produces the DFT electronic structure and the maximally localized Wannier functions (MLWFs) 
 that all later stages rely on. No code is distributed here; it uses the standard Quantum ESPRESSO and Wannier90 executables.
